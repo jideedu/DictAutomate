@@ -10,13 +10,13 @@ for x in range(2):
     # Create a new instance of the Google driver
     driver = webdriver.Chrome(executable_path="C:\\Users\\k1772492\\Downloads\\chromedriver.exe")
 
-    #Loading the Dictionary File
+    #Loading the Dictionary File from your system
     inFile = open('"C:\\Users\\k1772492\\Downloads\\OneDrive_1_28-11-2018\\dict.txt"', "r")
 
     #Skip the first line to avoid error
     #first_line = inFile.readline()
     
-    #Loading the word
+    #Looping through the word
     for x in inFile:
        
         # go to the cambridge Dictionary home page
