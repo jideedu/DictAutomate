@@ -8,10 +8,10 @@ from selenium.webdriver.support import expected_conditions as EC
 
 for x in range(2):
     # Create a new instance of the Google driver
-    driver = webdriver.Chrome(executable_path="C:\\Users\\k1772492\\Downloads\\chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:\\Users\\SHAM.SHAM-PC\\Desktop\\Chromes\\chromedriver.exe")
 
     #Loading the Dictionary File from your system
-    inFile = open('"C:\\Users\\k1772492\\Downloads\\OneDrive_1_28-11-2018\\dict.txt"', "r")
+    inFile = open('C:\\Users\\SHAM.SHAM-PC\\Desktop\\dict2.txt', "r")
 
     #Skip the first line to avoid error
     #first_line = inFile.readline()
