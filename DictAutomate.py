@@ -9,6 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 for x in range(2):
     # Create a new instance of the Google driver
     driver = webdriver.Chrome(executable_path="C:\\Users\\SHAM.SHAM-PC\\Desktop\\Chromes\\chromedriver.exe")
+    # Create a new instance of the Firefox driver
+    #driver = webdriver.Firefox(executable_path="C:\\Users\\k1772492\\Downloads\\chromedriver_win32\\geckodriver.exe")
 
     #Loading the Dictionary File from your system
     inFile = open('C:\\Users\\SHAM.SHAM-PC\\Desktop\\dict2.txt', "r")
@@ -40,7 +42,9 @@ for x in range(2):
 
             # You should see the world"
             #print (driver.title)
-
+            
+            #needed for firefox driver
+            time.sleep(3)
             #finally:
             # click UK pronounciation button using the Xpath
             python_button = driver.find_element_by_xpath('//*[@id="dataset-cald4"]/div[3]/div/div[2]/div/div/div[1]/div[1]/span[1]/span[1]/span[2]')
