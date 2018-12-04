@@ -6,6 +6,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+#Repeat the whole process twice
 for x in range(2):
     # Create a new instance of the Google driver
     driver = webdriver.Chrome(executable_path="C:\\Users\\SHAM.SHAM-PC\\Desktop\\Chromes\\chromedriver.exe")
