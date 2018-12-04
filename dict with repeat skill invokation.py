@@ -34,22 +34,13 @@ def Dicto(my_list):
             count = count + 1
                                 
             try:
-           
-
-                # the page is ajaxy so the title is originally this:
+                # This print the word to be pronounced by the dictionary:
                 print (driver.title)
                 
                 #Open a Log file
                 with open('Logee.txt', "a+") as f:
                     f.write("%s \n" %(driver.title))
-            
-                #try:
-                # we have to wait for the page to refresh, the last thing that seems to be updated is the title
-                #WebDriverWait(driver, 10).until(EC.title_contains(x))
-
-                # You should see the world"
-                #print (driver.title)
-
+                           
                 time.sleep(3)
                 #finally:
                 # click UK pronounciation button using the Xpath
