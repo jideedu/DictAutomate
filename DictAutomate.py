@@ -41,9 +41,6 @@ for x in range(2):
             # we have to wait for the page to refresh, the last thing that seems to be updated is the title
             #WebDriverWait(driver, 10).until(EC.title_contains(x))
 
-            # You should see the world"
-            #print (driver.title)
-            
             #needed for firefox driver
             time.sleep(3)
             #finally:
