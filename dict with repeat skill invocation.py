@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 def Dicto(my_list):
          
     # Create a new instance of the Google driver
-    driver = webdriver.Firefox(executable_path="C:\\Users\\*******8\\Downloads\\chromedriver_win32\\geckodriver.exe")
+    driver = webdriver.Firefox(executable_path="C:\\Users\\*******\\Downloads\\chromedriver_win32\\geckodriver.exe")
 
     #Loading the Dictionary File
     inFile = open('C:\\Users\\********\\Downloads\\chromedriver_win32\\dicts\\british-english_clean', "r")  
