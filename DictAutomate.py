@@ -28,7 +28,7 @@ for x in range(2):
         # type in the search
         inputElement.send_keys(x)
 
-        # submit the form
+        # submit the form (necessasry for Mozilla firefox browser)
         #inputElement.submit()
         try:
            
