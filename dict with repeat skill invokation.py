@@ -1,5 +1,3 @@
-#import unittest
-
 import time
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
@@ -9,15 +7,16 @@ from selenium.webdriver.support import expected_conditions as EC
 def Dicto(my_list):
          
     # Create a new instance of the Google driver
-    driver = webdriver.Firefox(executable_path="C:\\Users\\k1772492\\Downloads\\chromedriver_win32\\geckodriver.exe")
+    driver = webdriver.Firefox(executable_path="C:\\Users\\*******8\\Downloads\\chromedriver_win32\\geckodriver.exe")
 
     #Loading the Dictionary File
-    inFile = open('C:\\Users\\k1772492\\Downloads\\chromedriver_win32\\dicts\\british-english_clean', "r")  
+    inFile = open('C:\\Users\\********\\Downloads\\chromedriver_win32\\dicts\\british-english_clean', "r")  
     #Skip the first line to avoid error
     #first_line = inFile.readline()
-
+    
+    # To count the number of file pronounced
     count = 0
-    #my_list = list()
+
     #Loading the word
     for x in inFile:
         if x not in my_list:
@@ -64,8 +63,9 @@ def Dicto(my_list):
             except:
                 print (x + " is not in the dictionary!")
                 #time.sleep(2)
-        
-            if count==2:
+            
+            #Checking the number of words pronounced
+            if count==15:
                 break
         
         
@@ -77,7 +77,7 @@ def Dicto(my_list):
 
 def skillinvoke():
     # Create a new instance of the Google driver
-    driver = webdriver.Firefox(executable_path="C:\\Users\\k1772492\\Downloads\\chromedriver_win32\\geckodriver.exe")
+    driver = webdriver.Firefox(executable_path="C:\\Users\\********\\Downloads\\chromedriver_win32\\geckodriver.exe")
        
     # go to the naturalreaders home page
     driver.get("https://www.naturalreaders.com/online/")
